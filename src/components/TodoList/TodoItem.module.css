@@ -1,0 +1,76 @@
+.todoItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #fff;
+  transition: background-color 0.3s ease;
+  border-left: 5px solid transparent;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.todoItem:hover {
+  background-color: #f0f0f0;
+  cursor: pointer;
+}
+
+.todoItem.selected {
+  border-left: 5px solid #633030;
+}
+
+.todoItem input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+.todoItem .completed {
+  text-decoration: line-through;
+}
+
+.todoItem button:hover {
+  background-color: #cc0000;
+}
+
+.todoItem ul {
+  list-style: none;
+  padding: 0;
+}
+
+.todoItem .item {
+  color: #1f1919;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 24px;
+}
+
+.todoItem li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 5px 0;
+  padding: 5px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #f0f0f0;
+}
+
+.todoItem li div {
+  display: flex;
+  align-items: center;
+}
+
+.todoItem li button {
+  margin-left: 10px;
+  padding: 2px 5px;
+  background-color: #ff0000;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.todoItem li button:hover {
+  background-color: #cc0000;
+}
